@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberkitty's | Espacio Seguro STEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar glass">
+        <div class="logo">Cyberkitty's</div>
+        
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#hacemos">Qué Hacemos</a></li>
+            <li><a href="#unirse">Unirse</a></li>
+            <!-- El botón debe ir justo aquí, ANTES de cerrar el </ul> -->
+            <li>
+                <button id="btn-tema" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+            </li>
+        </ul>
+    </nav>
+    
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Un espacio seguro para mujeres en STEM.</h1>
+            <p>Una comunidad para aprender, conectar y crecer en tecnología, libre de sesgos y competencia.</p>
+            <a href="#unirse" class="btn-primary">Únete a la Comunidad</a>
+        </div>
+        <div class="hero-image">
+            <!-- Referencia a la imagen conceptual proporcionada -->
+            <img src="img/cyberkittys.png" alt="Cyberkitty Mascot" class="mascot">
+        </div>
+    </header>
+
+    <section id="hacemos" class="services">
+        <h2>¿Qué hacemos?</h2>
+        <div class="cards-container">
+            <div class="card glass">
+                <h3>Mentorías</h3>
+                <p>Aprende de expertas en la industria en un ambiente de apoyo mutuo.</p>
+            </div>
+            <div class="card glass">
+                <h3>Workshops y Talleres</h3>
+                <p>Desarrolla tus habilidades técnicas (código, redes, seguridad) sin presiones.</p>
+            </div>
+            <div class="card glass">
+                <h3>Red de Apoyo</h3>
+                <p>Un espacio seguro, libre de la competencia típica de género.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="unirse" class="join-section glass">
+        <h2>Únete a Cyberkitty's</h2>
+        <p>Déjanos tus datos y te contactaremos para agregarte al grupo.</p>
+        <form id="registroForm">
+            <input type="text" id="nombre" placeholder="Tu Nombre" required>
+            <input type="email" id="correo" placeholder="Tu Correo Electrónico" required>
+            <textarea id="motivo" placeholder="¿Por qué te gustaría unirte a la comunidad?" rows="4" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Solicitud</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+
+    <footer>
+        <div class="footer-content glass">
+            <p>Conecta con nosotras en Instagram:</p>
+            <a href="https://www.instagram.com/cyberkittys.mx/" target="_blank" class="insta-link">@cyberkittys.mx</a>
+            <p>© 2026 Cyberkitty's. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
